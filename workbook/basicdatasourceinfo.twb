@@ -17,8 +17,16 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='publisheddatasource-list' name='semistructpassivestore-direct.1w4mcis1fx2l801davbbm14kex76'>
-            <connection class='semistructpassivestore-direct' directory='/Users/Andre/Documents/Github/workbooks-metadata-api/workbook' filename='output.json' password='' server=''>
+            <connection class='semistructpassivestore-direct' directory='/Users/Andre/Documents/Github/workbooks-metadata-api/workbook/data' filename='output-basicDataSourceList.json' password='' server=''>
               <semistruct-schemas>
+                <semistruct-schema table='[output-basicDataSourceList.json]'>
+                  <map key='data' value='true' />
+                  <map key='data.publishedDatasourcesConnection' value='true' />
+                  <map key='data.publishedDatasourcesConnection.nodes' value='true' />
+                  <map key='data.publishedDatasourcesConnection.nodes.Value' value='true' />
+                  <map key='data.publishedDatasourcesConnection.nodes.Value.owner' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
                 <semistruct-schema table='[output.json]'>
                   <map key='data' value='true' />
                   <map key='data.publishedDatasourcesConnection' value='true' />
@@ -39,23 +47,23 @@
             </connection>
           </named-connection>
         </named-connections>
-        <relation connection='semistructpassivestore-direct.1w4mcis1fx2l801davbbm14kex76' name='output.json' table='[output.json]' type='table' />
+        <relation connection='semistructpassivestore-direct.1w4mcis1fx2l801davbbm14kex76' name='output-basicDataSourceList.json' table='[output-basicDataSourceList.json]' type='table' />
         <cols>
-          <map key='[Document Index (generated)]' value='[output.json].[Document Index (generated)]' />
-          <map key='[extractLastRefreshTime]' value='[output.json].[data.publishedDatasourcesConnection.nodes.Value.extractLastRefreshTime]' />
-          <map key='[hasExtracts]' value='[output.json].[data.publishedDatasourcesConnection.nodes.Value.hasExtracts]' />
-          <map key='[name]' value='[output.json].[data.publishedDatasourcesConnection.nodes.Value.name]' />
-          <map key='[nodes Index (generated)]' value='[output.json].[data.publishedDatasourcesConnection.nodes.Index (generated)]' />
-          <map key='[projectName]' value='[output.json].[data.publishedDatasourcesConnection.nodes.Value.projectName]' />
-          <map key='[totalCount]' value='[output.json].[data.publishedDatasourcesConnection.totalCount]' />
-          <map key='[username]' value='[output.json].[data.publishedDatasourcesConnection.nodes.Value.owner.username]' />
+          <map key='[Document Index (generated)]' value='[output-basicDataSourceList.json].[Document Index (generated)]' />
+          <map key='[extractLastRefreshTime]' value='[output-basicDataSourceList.json].[data.publishedDatasourcesConnection.nodes.Value.extractLastRefreshTime]' />
+          <map key='[hasExtracts]' value='[output-basicDataSourceList.json].[data.publishedDatasourcesConnection.nodes.Value.hasExtracts]' />
+          <map key='[name]' value='[output-basicDataSourceList.json].[data.publishedDatasourcesConnection.nodes.Value.name]' />
+          <map key='[nodes Index (generated)]' value='[output-basicDataSourceList.json].[data.publishedDatasourcesConnection.nodes.Index (generated)]' />
+          <map key='[projectName]' value='[output-basicDataSourceList.json].[data.publishedDatasourcesConnection.nodes.Value.projectName]' />
+          <map key='[totalCount]' value='[output-basicDataSourceList.json].[data.publishedDatasourcesConnection.totalCount]' />
+          <map key='[username]' value='[output-basicDataSourceList.json].[data.publishedDatasourcesConnection.nodes.Value.owner.username]' />
         </cols>
         <metadata-records>
           <metadata-record class='column'>
             <remote-name>Document Index (generated)</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Document Index (generated)]</local-name>
-            <parent-name>[output.json]</parent-name>
+            <parent-name>[output-basicDataSourceList.json]</parent-name>
             <remote-alias>Document Index (generated)</remote-alias>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
@@ -65,7 +73,7 @@
             <remote-name>data.publishedDatasourcesConnection.nodes.Index (generated)</remote-name>
             <remote-type>20</remote-type>
             <local-name>[nodes Index (generated)]</local-name>
-            <parent-name>[output.json]</parent-name>
+            <parent-name>[output-basicDataSourceList.json]</parent-name>
             <remote-alias>data.publishedDatasourcesConnection.nodes.Index (generated)</remote-alias>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
@@ -75,7 +83,7 @@
             <remote-name>data.publishedDatasourcesConnection.nodes.Value.extractLastRefreshTime</remote-name>
             <remote-type>130</remote-type>
             <local-name>[extractLastRefreshTime]</local-name>
-            <parent-name>[output.json]</parent-name>
+            <parent-name>[output-basicDataSourceList.json]</parent-name>
             <remote-alias>data.publishedDatasourcesConnection.nodes.Value.extractLastRefreshTime</remote-alias>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -86,7 +94,7 @@
             <remote-name>data.publishedDatasourcesConnection.nodes.Value.hasExtracts</remote-name>
             <remote-type>11</remote-type>
             <local-name>[hasExtracts]</local-name>
-            <parent-name>[output.json]</parent-name>
+            <parent-name>[output-basicDataSourceList.json]</parent-name>
             <remote-alias>data.publishedDatasourcesConnection.nodes.Value.hasExtracts</remote-alias>
             <local-type>boolean</local-type>
             <aggregation>Count</aggregation>
@@ -96,7 +104,7 @@
             <remote-name>data.publishedDatasourcesConnection.nodes.Value.name</remote-name>
             <remote-type>130</remote-type>
             <local-name>[name]</local-name>
-            <parent-name>[output.json]</parent-name>
+            <parent-name>[output-basicDataSourceList.json]</parent-name>
             <remote-alias>data.publishedDatasourcesConnection.nodes.Value.name</remote-alias>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -107,7 +115,7 @@
             <remote-name>data.publishedDatasourcesConnection.nodes.Value.owner.username</remote-name>
             <remote-type>130</remote-type>
             <local-name>[username]</local-name>
-            <parent-name>[output.json]</parent-name>
+            <parent-name>[output-basicDataSourceList.json]</parent-name>
             <remote-alias>data.publishedDatasourcesConnection.nodes.Value.owner.username</remote-alias>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -118,7 +126,7 @@
             <remote-name>data.publishedDatasourcesConnection.nodes.Value.projectName</remote-name>
             <remote-type>130</remote-type>
             <local-name>[projectName]</local-name>
-            <parent-name>[output.json]</parent-name>
+            <parent-name>[output-basicDataSourceList.json]</parent-name>
             <remote-alias>data.publishedDatasourcesConnection.nodes.Value.projectName</remote-alias>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -129,7 +137,7 @@
             <remote-name>data.publishedDatasourcesConnection.totalCount</remote-name>
             <remote-type>5</remote-type>
             <local-name>[totalCount]</local-name>
-            <parent-name>[output.json]</parent-name>
+            <parent-name>[output-basicDataSourceList.json]</parent-name>
             <remote-alias>data.publishedDatasourcesConnection.totalCount</remote-alias>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -153,11 +161,11 @@
           </formatted-text>
         </desc>
       </column>
-      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per output.json]' role='measure' type='quantitative'>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per output-basicDataSourceList.json]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
         <desc>
           <formatted-text>
-            <run>A calculated measure that is at output.json level of detail</run>
+            <run>A calculated measure that is at output-basicDataSourceList.json level of detail</run>
           </formatted-text>
         </desc>
       </column>
@@ -228,11 +236,11 @@
         <folder-item name='[nodes Index (generated)]' type='field' />
         <folder-item name='[projectName]' type='field' />
       </folder>
-      <folder name='Output' role='dimensions'>
-        <folder-item name='[Document Index (generated)]' type='field' />
-      </folder>
       <folder name='Owner' role='dimensions'>
         <folder-item name='[username]' type='field' />
+      </folder>
+      <folder name='output-basicDataSourceList' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
       </folder>
       <folder name='Source Measures' role='measures'>
         <folder-item name='[totalCount]' type='field' />
@@ -492,8 +500,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='14' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='15' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='20' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='21' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='5250' id='11' type='title' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -567,7 +575,7 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='5' />
+      <active id='-1' />
       <simple-id uuid='{C8E6E453-1262-4408-917F-435D844F7B0E}' />
     </window>
     <window class='worksheet' hidden='true' name='Extract or Not?'>

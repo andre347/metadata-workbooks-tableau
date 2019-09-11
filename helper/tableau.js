@@ -1,5 +1,12 @@
 import fetch from "node-fetch";
-import { query } from "./graphql/query";
+import {
+  basicDataSourceList,
+  generalDataSourceInfo,
+  dataSourceFieldsCalculations,
+  downstreamFromDatabaseserver,
+  downstreamFromDatasource,
+  upstreamFromDatasource
+} from "./graphql/query";
 
 // this is for authentication
 
@@ -27,6 +34,33 @@ const authTableau = async data => {
   return json.credentials.token;
 };
 
+// switch between the queries
+
+function switchQuery(type) {
+  let value;
+  switch (type) {
+    case "basicDataSourceList":
+      value = basicDataSourceList;
+      break;
+    case "generalDataSourceInfo":
+      value = generalDataSourceInfo;
+      break;
+    case "dataSourceFieldsCalculations":
+      value = dataSourceFieldsCalculations;
+      break;
+    case "downstreamFromDatabaseserver":
+      value = downstreamFromDatabaseserver;
+      break;
+    case "downstreamFromDatasource":
+      value = downstreamFromDatasource;
+      break;
+    case "upstreamFromDatasource":
+      value = upstreamFromDatasource;
+      break;
+  }
+  return value;
+}
+
 // this gets some publishes data sources info
 
 const fetchPublishDataSources = async (authToken, answers) => {
@@ -39,7 +73,7 @@ const fetchPublishDataSources = async (authToken, answers) => {
       "X-Tableau-Auth": authToken
     },
     body: JSON.stringify({
-      query: query
+      query: switchQuery(answers.type)
     })
   });
   const responseData = await info.json();
