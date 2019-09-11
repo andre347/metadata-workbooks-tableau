@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
-const questions = require("./helper/questions");
+const questions = require("./helper/questions-keys");
 const open = require("open");
 
 import { authTableau, fetchPublishDataSources } from "./helper/tableau.js";
