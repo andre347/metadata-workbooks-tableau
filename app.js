@@ -18,22 +18,22 @@ function switchWorkbooks(type) {
   let value;
   switch (type) {
     case "basicDataSourceList":
-      value = "basicdatasource.twb";
+      value = "./workbook/data/basicdatasourcelist.json";
       break;
     case "generalDataSourceInfo":
-      value = "generalDataSourceInfo.twb";
+      value = "./workbook/generalDataSourceInfo.twb";
       break;
     case "dataSourceFieldsCalculations":
-      value = "dataSourceFieldsCalculations.twb";
+      value = "./workbook/dataSourceFieldsCalculations.twb";
       break;
     case "downstreamFromDatabaseserver":
-      value = "downstreamFromDatabaseserver.twb";
+      value = "./workbook/downstreamFromDatabaseserver.twb";
       break;
     case "downstreamFromDatasource":
-      value = "downstreamFromDatasource.twb";
+      value = "./workbook/downstreamFromDatasource.twb";
       break;
     case "upstreamFromDatasource":
-      value = "upstreamfromdatasource.twb";
+      value = "./workbook/upstreamfromdatasource.twb";
       break;
   }
   return value;
@@ -48,7 +48,7 @@ inquirer.prompt(questions).then(answers => {
       fs.writeFileSync(writeFileName, JSON.stringify(values));
       console.log(`Done! JSON file created, opening ${switchWorkbooks(answers.type)}`);
       (async () => {
-        await open(`./workbook/${switchWorkbooks(answers.type)}`);
+        await open(switchWorkbooks(answers.type));
         console.log("The workbook opened");
       })();
       process.exit(0);

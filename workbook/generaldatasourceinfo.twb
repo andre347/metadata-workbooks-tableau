@@ -657,25 +657,9 @@
       <folder name='Source Measures' role='measures'>
         <folder-item name='[totalCount]' type='field' />
       </folder>
-      <layout dim-ordering='alphabetic' dim-percentage='0.570115' measure-ordering='alphabetic' measure-percentage='0.333333' parameter-percentage='0.0965517' show-structure='false' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.570792' measure-ordering='alphabetic' measure-percentage='0.332218' parameter-percentage='0.09699' show-structure='false' />
       <style>
         <style-rule element='mark'>
-          <encoding attr='color' field='[none:hasExtracts:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>true</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>false</bucket>
-            </map>
-          </encoding>
-          <encoding attr='shape' field='[none:hasExtracts:nk]' type='shape'>
-            <map to='KPI/01.png'>
-              <bucket>true</bucket>
-            </map>
-            <map to='square'>
-              <bucket>false</bucket>
-            </map>
-          </encoding>
           <encoding attr='color' field='[none:Calculation_1581326451632783364:nk]' type='palette'>
             <map to='#282828'>
               <bucket>%null%</bucket>
@@ -699,6 +683,22 @@
             </map>
             <map to='KPI/07.png'>
               <bucket>%null%</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:hasExtracts:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:hasExtracts:nk]' type='shape'>
+            <map to='KPI/01.png'>
+              <bucket>true</bucket>
+            </map>
+            <map to='square'>
+              <bucket>false</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -2006,7 +2006,7 @@
                           </zone-style>
                         </zone>
                         <zone h='23305' id='82' name='Workbooks' w='48926' x='20117' y='71617'>
-                          <layout-cache type-h='cell' type-w='fixed' />
+                          <layout-cache cell-count-h='1' non-cell-size-h='37' type-h='cell' type-w='fixed' />
                           <zone-style>
                             <format attr='border-color' value='#000000' />
                             <format attr='border-style' value='none' />
