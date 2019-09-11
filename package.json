@@ -1,0 +1,20 @@
+{
+  "name": "workbooks-audit-metadata-api",
+  "version": "1.0.0",
+  "description": "A CLI to help generate workbooks for the auditor",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r esm app.js"
+  },
+  "keywords": [
+    "tableau"
+  ],
+  "author": "Andre de Vries <aedevries19@gmail.com> (https://andredevries.dev)",
+  "license": "MIT",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "inquirer": "^7.0.0",
+    "node-fetch": "^2.6.0",
+    "open": "^6.4.0"
+  }
+}
