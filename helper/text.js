@@ -8,7 +8,7 @@ v0.1 by Team TILceratops
 
 ****************************************************************************
 
-Email Ben Lower (bklower@tableau.com) for support, we don't wanna know!
+Email Andre de Vries (andre.devries@theinformationlab.co.uk) for support & feature requests, but only if you ask nice!
 
 ****************************************************************************
 
