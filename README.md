@@ -29,9 +29,10 @@ Types of analysis:
 
 ## How to use:
 
+0. Download & install NodeJS from https://nodejs.org/en/
 1. Download or Clone this repo
-2. cd into the folder
-3.
+1. cd into the folder
+1.
 
 ```
 npm install
