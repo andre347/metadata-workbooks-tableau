@@ -29,16 +29,16 @@ Types of analysis:
 
 ## How to use:
 
-0. Download & install NodeJS from https://nodejs.org/en/
-1. Download or Clone this repo
-1. cd into the folder
-1.
+1. Download & install NodeJS from https://nodejs.org/en/
+2. Download or Clone this repo
+3. cd into the folder
+4.
 
 ```
 npm install
 ```
 
-4.
+5.
 
 ```
 npm run start
