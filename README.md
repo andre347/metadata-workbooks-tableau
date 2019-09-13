@@ -44,4 +44,4 @@ npm install
 npm run start
 ```
 
-5. After your run the command of step 4 you walk through a set of questions. These allow you to automatically connect to the Metadata API, generate JSON files based on your selections, and output workbooks. In these workbooks you can analyse several metadata related questions.
+6. After your run the command of step 5 you walk through a set of questions. These allow you to automatically connect to the Metadata API, generate JSON files based on your selections, and output workbooks. In these workbooks you can analyse several metadata related questions.
