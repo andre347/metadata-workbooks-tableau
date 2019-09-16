@@ -1,15 +1,21 @@
 const text = `
-Tableau Server Datasource Analyser
-
 ****************************************************************************
-
+T A B L E A U  D A T A S O U R C E  A N A L Y S E R
+****************************************************************************
 v0.1 by Team TILceratops
 (Andre, Manuela, Sasha and JMAC at The Information Lab)
-
+                        . - ~ ~ ~ - .
+      ..     _      .-~               ~-.
+     //|     \ \`..~                      \`.
+    || |      }  }              /       \  \
+(\   \\ \~^..'                 |         }  \
+ \`.-~  o      /       }       |        /    \
+ (__          |       /        |       /      \`.
+  \`- - ~ ~ -._|      /_ - ~ ~ ^|      /- _      \`.
+              |     /          |     /     ~-.     ~- _
+              |_____|          |_____|         ~ - . _ _~_-_
 ****************************************************************************
-
 Email Andre de Vries (andre.devries@theinformationlab.co.uk) for support & feature requests, but only if you ask nice!
-
 ****************************************************************************
 
 Ever wondered which published workbooks use which published datasources on your Tableau Server? Or how about which fields are being referenced in subsequent calculations?
@@ -22,10 +28,8 @@ This utility has the answers! Using Tableau's new Metadata API, this tool will:
 The tool will then collect the data in a JSON output file and open a pre-built Tableau workbook which will allow you to perform further analysis.
 
 ****************************************************************************
-
 For more information see:
 'https://github.com/andre347/metadata-workbooks-tableau'
-
 ****************************************************************************
 
 Answer the questions below and this utility will generate a Tableau workbook for each type of analysis
