@@ -2,3 +2,4 @@ node_modules
 workbook/output.json
 test.js
 workbook/backupworkbooks
+.DS_Store
